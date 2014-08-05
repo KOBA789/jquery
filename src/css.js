@@ -15,7 +15,6 @@ define([
 
 	"./core/init",
 	"./css/swap",
-	"./core/ready",
 	"./selector" // contains
 ], function( jQuery, pnum, access, rmargin, rnumnonpx, cssExpand, isHidden,
 	getStyles, curCSS, defaultDisplay, addGetHookIf, support, dataPriv ) {
