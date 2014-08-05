@@ -214,13 +214,6 @@ module.exports = function( grunt ) {
 			excluder( flag );
 		}
 
-		// Handle Sizzle exclusion
-		// Replace with selector-native
-		if ( (index = excluded.indexOf( "sizzle" )) > -1 ) {
-			config.rawText.selector = "define(['./selector-native']);";
-			excluded.splice( index, 1 );
-		}
-
 		// Replace exports/global with a noop noConflict
 		if ( (index = excluded.indexOf( "exports/global" )) > -1 ) {
 			config.rawText[ "exports/global" ] = "define(['../core']," +
